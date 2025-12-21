@@ -39,7 +39,7 @@ const outfit = Outfit({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={outfit.variable}>
+    <html lang="en" className="scroll-smooth">
       <body>{children}</body>
     </html>
   );
