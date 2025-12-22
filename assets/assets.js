@@ -29,7 +29,7 @@ import menu_white from "./menu-white.png";
 import close_black from "./close-black.png";
 import close_white from "./close-white.png";
 import web_icon from "./web-icon.png";
-import mobile_icon from "./mobile-icon.png";
+import business_icon from "./business-icon.png";
 import ui_icon from "./ui-icon.png";
 import graphics_icon from "./graphics-icon.png";
 import right_arrow from "./right-arrow.png";
@@ -69,7 +69,7 @@ export const assets = {
   close_black,
   close_white,
   web_icon,
-  mobile_icon,
+  business_icon,
   ui_icon,
   graphics_icon,
   right_arrow,
@@ -109,10 +109,10 @@ export const serviceData = [
     link: "",
   },
   {
-    icon: assets.mobile_icon,
-    title: "Mobile app",
+    icon: assets.business_icon,
+    title: "Business website",
     description:
-      "Mobile app development involves creating software for mobile devices...",
+      "Business websites are online platforms that represent companies...",
     link: "",
   },
   {
@@ -122,12 +122,7 @@ export const serviceData = [
       "UI/UX design focuses on creating a seamless user experience...",
     link: "",
   },
-  {
-    icon: assets.graphics_icon,
-    title: "Graphics design",
-    description: "Creative design solutions to enhance visual communication...",
-    link: "",
-  },
+ 
 ];
 
 export const infoList = [
