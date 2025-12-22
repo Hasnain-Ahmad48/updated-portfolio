@@ -97,12 +97,12 @@ export const workData = [
     bg_Image: "/github-finder.png",
     url: "https://findgitpro.netlify.app/",
   },
-  {
-    title: "FullStack ToDo App",
-    description: "Web Design",
-    bg_Image: "/todo.png",
-    url: "https://chatverse.vercel.app",
-  },
+  // {
+  //   title: "FullStack ToDo App",
+  //   description: "Web Design",
+  //   bg_Image: "/todo.png",
+  //   url: "#",
+  // },
 ];
 
 export const serviceData = [
