@@ -46,11 +46,22 @@ const Work = () => {
                   className="w-5"
                 />
               </Link>
+              <Link
+                href={project.github_url}
+                target="_blank"
+                className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] hover:bg-lime-300 transition"
+              >
+                <Image
+                  src={assets.github_icon}
+                  alt="send icon"
+                  className="w-5"
+                />
+              </Link>
             </div>
           </div>
         ))}
       </div>
-      <a href="" className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500">
+      <a href="#work" className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500">
         show more <Image src={assets.right_arrow_bold} alt="right arrow" className="4" />
       </a>
     </div>

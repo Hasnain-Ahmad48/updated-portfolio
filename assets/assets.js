@@ -11,6 +11,7 @@ import postman from "./postman.png";
 import figma from "./figma.png";
 import git from "./git.png";
 import mongodb from "./mongodb.png";
+import github_icon from "./github.png"
 import right_arrow_white from "./right-arrow-white.png";
 import logo from "./logo.png";
 import logo_dark from "./logo-dark-bg.png";
@@ -51,6 +52,7 @@ export const assets = {
   git,
   postman,
   mongodb,
+  github_icon,
   right_arrow_white,
   logo,
   logo_dark,
@@ -84,24 +86,28 @@ export const workData = [
     description: "Web Design",
     bg_Image: "/chat-app.png",
     url: "https://chatting-app-buddy.netlify.app/register",
+    github_url:"https://github.com/Hasnain-Ahmad48/ChatVerse-frontend"
   },
   {
     title: "NearbyResturant",
     description: "Web Design",
     bg_Image: "/restuarant.png",
     url: "https://nearbyrestaurant.netlify.app/",
+    github_url:"https://github.com/Hasnain-Ahmad48/Restaurant_Finder"
   },
   {
     title: "GitHub Finder",
     description: "Web Design",
     bg_Image: "/github-finder.png",
     url: "https://findgitpro.netlify.app/",
+    github_url:"https://github.com/Hasnain-Ahmad48/GitHub_Profile_Finder"
   },
   // {
   //   title: "FullStack ToDo App",
   //   description: "Web Design",
   //   bg_Image: "/todo.png",
   //   url: "#",
+  // github_url:"https://github.com/Hasnain-Ahmad48/fullStack-Todo-app"
   // },
 ];
 
