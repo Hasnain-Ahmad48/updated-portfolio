@@ -80,24 +80,28 @@ export const assets = {
 
 export const workData = [
   {
-    title: "Frontend project",
+    title: "FullStack Chat App",
     description: "Web Design",
-    bgImage: "/work-1.png",
+    bg_Image: "/chat-app.png",
+    url: "https://chatting-app-buddy.netlify.app/register",
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
-    bgImage: "/work-2.png",
-  },
-  {
-    title: "Photography site",
+    title: "NearbyResturant",
     description: "Web Design",
-    bgImage: "/work-3.png",
+    bg_Image: "/restuarant.png",
+    url: "https://nearbyrestaurant.netlify.app/",
   },
   {
-    title: "UI/UX designing",
-    description: "UI/UX Design",
-    bgImage: "/work-4.png",
+    title: "GitHub Finder",
+    description: "Web Design",
+    bg_Image: "/github-finder.png",
+    url: "https://findgitpro.netlify.app/",
+  },
+  {
+    title: "FullStack ToDo App",
+    description: "Web Design",
+    bg_Image: "/todo.png",
+    url: "https://chatverse.vercel.app",
   },
 ];
 
@@ -122,7 +126,6 @@ export const serviceData = [
       "UI/UX design focuses on creating a seamless user experience...",
     link: "",
   },
- 
 ];
 
 export const infoList = [
