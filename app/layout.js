@@ -30,12 +30,22 @@
 
 //
 import "./globals.css";
-import { Outfit } from "next/font/google";
+import { Outfit, Ovo } from "next/font/google";
 
 const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-outfit",
 });
+
+const ovo = Ovo({
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
+export const metadata = {
+  title: "Portfolio - Hasnain Ahmad",
+  description: "",
+};
 
 export default function RootLayout({ children }) {
   return (

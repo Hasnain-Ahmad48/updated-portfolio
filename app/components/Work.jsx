@@ -21,9 +21,7 @@ const Work = () => {
         {workData.map((project, index) => (
           <div
             key={index}
-            className="rounded-lg overflow-hidden bg-white shadow-md 
-                 hover:-translate-y-1 hover:shadow-lg 
-                 transition-all duration-300"
+            className="rounded-lg overflow-hidden bg-white shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
           >
             <div
               className="aspect-[16/10] bg-cover bg-center w-full"
