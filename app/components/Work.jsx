@@ -2,24 +2,56 @@ import {assets, workData} from "@/assets/assets";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import {motion} from "motion/react";
 
 const Work = ({isDarkMode}) => {
   return (
-    <div
+    <motion.div
+      initial={{opacity: 0}}
+      whileInView={{opacity: 1}}
+      transition={{duration: 1}}
       id="work"
       className="w-full px-[12%] py-10 scroll-mt-20"
     >
-      <h4 className="text-center mb-2 text-lg font-Ovo">My portfolio</h4>
-      <h2 className="text-center text-5xl font-Ovo">My latest work</h2>
-      <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
+      <motion.h4
+        initial={{y: -20, opacity: 0}}
+        whileInView={{y: 0, opacity: 1}}
+        transition={{delay: 0.3, duration: 0.5}}
+        className="text-center mb-2 text-lg font-Ovo"
+      >
+        My portfolio
+      </motion.h4>
+
+      <motion.h2
+        initial={{y: -20, opacity: 0}}
+        whileInView={{y: 0, opacity: 1}}
+        transition={{delay: 0.5, duration: 0.5}}
+        className="text-center text-5xl font-Ovo"
+      >
+        My latest work
+      </motion.h2>
+
+      <motion.p
+        initial={{opacity: 0}}
+        whileInView={{opacity: 1}}
+        transition={{delay: 0.7, duration: 0.5}}
+        className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
+      >
         Wellcome to my web development portfolio! Explore a collection of my
         latest projects showcasing my skills in creating dynamic and responsive
         web applications.
-      </p>
+      </motion.p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-10 dark:text-black">
+      <motion.div
+        initial={{opacity: 0}}
+        whileInView={{opacity: 1}}
+        transition={{delay: 0.9, duration: 0.6}}
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-10 dark:text-black"
+      >
         {workData.map((project, index) => (
-          <div
+          <motion.div
+            whileHover={{scale: 1.05}}
+            transition={{duration: 0.3}}
             key={index}
             className="rounded-lg overflow-hidden bg-white shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300 dark:shadow-md "
           >
@@ -56,10 +88,13 @@ const Work = ({isDarkMode}) => {
                 />
               </Link>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
-      <a
+      </motion.div>
+      <motion.a
+        initial={{opacity: 0}}
+        whileInView={{opacity: 1}}
+        transition={{delay: 1.1, duration: 0.5}}
         href="#work"
         className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:hover:bg-darkHover dark:border-white"
       >
@@ -71,8 +106,8 @@ const Work = ({isDarkMode}) => {
           alt="right arrow"
           className="4"
         />
-      </a>
-    </div>
+      </motion.a>
+    </motion.div>
   );
 };
 

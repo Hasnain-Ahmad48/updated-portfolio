@@ -27,7 +27,7 @@ const About = ({isDarkMode}) => {
       >
         About me
       </motion.h2>
-      <div className="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+      <div className="flex w-full flex-col lg:flex-row   items-center gap-20 my-20">
         <div className="w-64 sm:w-80 rounded-3xl max-w-none">
           <Image
             src={assets.profile_img}
@@ -68,12 +68,22 @@ const About = ({isDarkMode}) => {
               </li>
             ))}
           </ul>
-          <h4 className="my-6 text-gray-700 font-Ovo dark:text-white/80">
+          <motion.h4
+            initial={{y: 20, opacity: 0}}
+            whileInView={{y: 0, opacity: 1}}
+            transition={{delay: 1.3, duration: 0.5}}
+            className="my-6 text-gray-700 font-Ovo dark:text-white/80"
+          >
             Tools I use
-          </h4>
-          <ul className="flex items-center gap-3 sm:gap-5">
+          </motion.h4>
+          <motion.ul 
+          initial={{y: 20, opacity: 0}}
+            whileInView={{y: 0, opacity: 1}}
+            transition={{delay: 1.3, duration: 0.5}}
+          className="flex items-center gap-3 sm:gap-5">
             {toolsData.map((tool, index) => (
-              <li
+              <motion.li
+              whileHover={{scale:1.1}}
                 key={index}
                 className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
               >
@@ -82,9 +92,9 @@ const About = ({isDarkMode}) => {
                   src={tool}
                   className="w-5 sm:w-7"
                 />
-              </li>
+              </motion.li>
             ))}
-          </ul>
+          </motion.ul>
         </div>
       </div>
     </motion.div>
