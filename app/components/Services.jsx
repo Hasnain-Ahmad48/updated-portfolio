@@ -64,7 +64,7 @@ const Services = ({isDarkMode}) => {
               {description}
             </p>
             <a
-              href={link}
+              href={""}
               className="flex items-center gap-2 text-sm mt-5"
             >
               Read more{" "}

@@ -45,7 +45,7 @@ const Header = () => {
         className="max-w-2xl mx-auto font-medium"
       >
         I am a passionate FullStack Developer with expertise in building
-        responsive and user-friendly web applications.
+        responsive and user-friendly websites.
       </motion.p>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
         <motion.a
