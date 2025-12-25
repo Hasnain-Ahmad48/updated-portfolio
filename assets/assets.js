@@ -11,7 +11,7 @@ import postman from "./postman.png";
 import figma from "./figma.png";
 import git from "./git.png";
 import mongodb from "./mongodb.png";
-import github_icon from "./github.png"
+import github_icon from "./github.png";
 import right_arrow_white from "./right-arrow-white.png";
 import logo from "./logo.png";
 import logo_dark from "./logo-dark-bg.png";
@@ -86,29 +86,22 @@ export const workData = [
     description: "Web Design",
     bg_Image: "/chat-app.png",
     url: "https://chatting-app-buddy.netlify.app/register",
-    github_url:"https://github.com/Hasnain-Ahmad48/ChatVerse-frontend"
+    github_url: "https://github.com/Hasnain-Ahmad48/ChatVerse-frontend",
   },
   {
     title: "NearbyResturant",
     description: "Web Design",
     bg_Image: "/restuarant.png",
     url: "https://nearbyrestaurant.netlify.app/",
-    github_url:"https://github.com/Hasnain-Ahmad48/Restaurant_Finder"
+    github_url: "https://github.com/Hasnain-Ahmad48/Restaurant_Finder",
   },
   {
     title: "GitHub Finder",
     description: "Web Design",
     bg_Image: "/github-finder.png",
     url: "https://findgitpro.netlify.app/",
-    github_url:"https://github.com/Hasnain-Ahmad48/GitHub_Profile_Finder"
+    github_url: "https://github.com/Hasnain-Ahmad48/GitHub_Profile_Finder",
   },
-  // {
-  //   title: "FullStack ToDo App",
-  //   description: "Web Design",
-  //   bg_Image: "/todo.png",
-  //   url: "#",
-  // github_url:"https://github.com/Hasnain-Ahmad48/fullStack-Todo-app"
-  // },
 ];
 
 export const serviceData = [
@@ -116,21 +109,24 @@ export const serviceData = [
     icon: assets.web_icon,
     title: "Web design",
     description: "Web development is the process of building, programming...",
-    link: "",
+    details:
+      "I create modern, responsive, and high-performance websites using, React.Js, and Tailwind CSS, Node.js. The focus is on clean UI, accessibility, and fast loading speeds.",
   },
   {
     icon: assets.business_icon,
     title: "Business website",
     description:
       "Business websites are online platforms that represent companies...",
-    link: "",
+    details:
+      "I build professional business websites that establish trust, improve brand presence, and convert visitors into customers. SEO and performance optimized.",
   },
   {
     icon: assets.ui_icon,
     title: "UI/UX design",
     description:
       "UI/UX design focuses on creating a seamless user experience...",
-    link: "",
+    details:
+      "I design intuitive user interfaces and smooth user experiences with a strong focus on usability, user flow, and modern design principles.",
   },
 ];
 
