@@ -108,7 +108,7 @@ export const serviceData = [
   {
     icon: assets.web_icon,
     title: "Web design",
-    description: "Web development is the process of building, programming...",
+    description: "I create modern, responsive, and high-performance websites using...",
     details:
       "I create modern, responsive, and high-performance websites using, React.Js, and Tailwind CSS, Node.js. The focus is on clean UI, accessibility, and fast loading speeds.",
   },
@@ -116,7 +116,7 @@ export const serviceData = [
     icon: assets.business_icon,
     title: "Business website",
     description:
-      "Business websites are online platforms that represent companies...",
+      "I build professional business websites that establish trust...",
     details:
       "I build professional business websites that establish trust, improve brand presence, and convert visitors into customers. SEO and performance optimized.",
   },
@@ -124,7 +124,7 @@ export const serviceData = [
     icon: assets.ui_icon,
     title: "UI/UX design",
     description:
-      "UI/UX design focuses on creating a seamless user experience...",
+      "I design intuitive user interfaces and smooth user experiences with...",
     details:
       "I design intuitive user interfaces and smooth user experiences with a strong focus on usability, user flow, and modern design principles.",
   },

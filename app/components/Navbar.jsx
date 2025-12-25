@@ -40,7 +40,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
             : ""
         } `}
       >
-        <a href="#top">
+        <a href="#home">
           <Image
             src={isDarkMode ? assets.logo_dark : assets.logo}
             alt="logo"
@@ -57,7 +57,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
           <li>
             <a
               className="font-medium"
-              href="#top"
+              href="#home"
             >
               Home
             </a>
