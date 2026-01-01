@@ -1,4 +1,3 @@
-import user_image from "./user-image.png";
 import code_icon from "./code-icon.png";
 import code_icon_dark from "./code-icon-dark.png";
 import edu_icon from "./edu-icon.png";
@@ -10,7 +9,9 @@ import firebase from "./firebase.png";
 import postman from "./postman.png";
 import figma from "./figma.png";
 import git from "./git.png";
-import linkedin from "./linkedin.png"
+import github_side_icon from "./side-icon-light.png";
+import github_side_icon_dark from "./side-icon-dark.png"
+import linkedin from "./linkedin.png";
 import mongodb from "./mongodb.png";
 import github_icon from "./github.png";
 import right_arrow_white from "./right-arrow-white.png";
@@ -40,7 +41,6 @@ import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 
 export const assets = {
-  user_image,
   code_icon,
   code_icon_dark,
   edu_icon,
@@ -48,9 +48,11 @@ export const assets = {
   project_icon,
   project_icon_dark,
   vscode,
+  github_side_icon_dark,
   firebase,
   figma,
   git,
+  github_side_icon,
   linkedin,
   postman,
   mongodb,
@@ -110,7 +112,8 @@ export const serviceData = [
   {
     icon: assets.web_icon,
     title: "Web design",
-    description: "I create modern, responsive, and high-performance websites using...",
+    description:
+      "I create modern, responsive, and high-performance websites using...",
     details:
       "I create modern, responsive, and high-performance websites using, React.Js, and Tailwind CSS, Node.js. The focus is on clean UI, accessibility, and fast loading speeds.",
   },
