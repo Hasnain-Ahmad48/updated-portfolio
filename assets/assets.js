@@ -10,6 +10,7 @@ import firebase from "./firebase.png";
 import postman from "./postman.png";
 import figma from "./figma.png";
 import git from "./git.png";
+import linkedin from "./linkedin.png"
 import mongodb from "./mongodb.png";
 import github_icon from "./github.png";
 import right_arrow_white from "./right-arrow-white.png";
@@ -50,6 +51,7 @@ export const assets = {
   firebase,
   figma,
   git,
+  linkedin,
   postman,
   mongodb,
   github_icon,

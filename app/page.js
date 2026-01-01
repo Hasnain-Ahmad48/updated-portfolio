@@ -9,8 +9,16 @@ import Navbar from "./components/Navbar";
 import Services from "./components/Services";
 import Work from "./components/Work";
 
+
 export default function Home() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    if (typeof window === "undefined") return false;
+
+    if (localStorage.theme === "dark") return true;
+    if (localStorage.theme === "light") return false;
+
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  });
 
   useEffect(() => {
     if (isDarkMode) {
@@ -18,12 +26,13 @@ export default function Home() {
       localStorage.theme = "dark";
     } else {
       document.documentElement.classList.remove("dark");
-      localStorage.theme = "";
+      localStorage.theme = "light";
     }
   }, [isDarkMode]);
 
   return (
     <>
+      
       <Navbar
         isDarkMode={isDarkMode}
         setIsDarkMode={setIsDarkMode}

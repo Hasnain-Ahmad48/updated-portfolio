@@ -2,10 +2,12 @@ import {assets} from "@/assets/assets";
 import Image from "next/image";
 import React from "react";
 import {motion} from "motion/react";
+import SocialsLinks from "./SocialsLinks";
 
 const Header = () => {
   return (
-    <div id="home" className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+    <div id="home" className="relative w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+      <SocialsLinks/>
       <motion.div
         initial={{scale: 0}}
         whileInView={{scale: 1}}
@@ -30,6 +32,7 @@ const Header = () => {
           className="w-6"
         />
       </motion.h3>
+      
       <motion.h1
         initial={{y: -30, opacity: 0}}
         whileInView={{y: 0, opacity: 1}}
@@ -78,6 +81,7 @@ const Header = () => {
           />
         </motion.a>
       </div>
+      
     </div>
   );
 };
