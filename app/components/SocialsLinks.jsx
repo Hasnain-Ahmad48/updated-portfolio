@@ -5,7 +5,7 @@ const SocialsLinks = ({isDarkMode}) => {
   return (
     <div className="absolute left-[-20%] top-1/2 -translate-y-1/2 hidden md:flex flex-col gap-4">
       <a
-        href=""
+        href="https://linkedin.com/in/hasnain-ahmad-6608ab312"
         target="_blank"
         className="w-10 h-10 flex items-center justify-center  rounded-full border border-e-gray-400 hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black  dark:bg-white dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50"
       >
@@ -17,7 +17,7 @@ const SocialsLinks = ({isDarkMode}) => {
       </a>
 
       <a
-        href=""
+        href="https://github.com/Hasnain-Ahmad48"
         target="_blank"
         className="w-10 h-10 flex items-center justify-center  rounded-full border border-e-gray-400 hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black  dark:bg-white dark:border-white dark:hover:shadow-white dark:border-8 border-black transition"
       >
