@@ -1,40 +1,40 @@
-import {assets, workData} from "@/assets/assets";
+import { assets, workData } from "@/assets/assets";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import {motion} from "motion/react";
+import { motion } from "motion/react";
 
-const Work = ({isDarkMode}) => {
+const Work = ({ isDarkMode }) => {
   return (
     <motion.div
-      initial={{opacity: 0}}
-      whileInView={{opacity: 1}}
-      transition={{duration: 1}}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
       id="work"
       className="w-full px-[12%] py-10 scroll-mt-20"
     >
       <motion.h4
-        initial={{y: -20, opacity: 0}}
-        whileInView={{y: 0, opacity: 1}}
-        transition={{delay: 0.3, duration: 0.5}}
+        initial={{ y: -20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.3, duration: 0.5 }}
         className="text-center mb-2 text-lg font-Ovo"
       >
         My portfolio
       </motion.h4>
 
       <motion.h2
-        initial={{y: -20, opacity: 0}}
-        whileInView={{y: 0, opacity: 1}}
-        transition={{delay: 0.5, duration: 0.5}}
+        initial={{ y: -20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.5, duration: 0.5 }}
         className="text-center text-5xl font-Ovo"
       >
         My latest work
       </motion.h2>
 
       <motion.p
-        initial={{opacity: 0}}
-        whileInView={{opacity: 1}}
-        transition={{delay: 0.7, duration: 0.5}}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.7, duration: 0.5 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
       >
         Wellcome to my web development portfolio! Explore a collection of my
@@ -43,21 +43,21 @@ const Work = ({isDarkMode}) => {
       </motion.p>
 
       <motion.div
-        initial={{opacity: 0}}
-        whileInView={{opacity: 1}}
-        transition={{delay: 0.9, duration: 0.6}}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.9, duration: 0.6 }}
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-10 dark:text-black"
       >
-        {workData.map((project, index) => (
+        {workData.slice(0, 3).map((project, index) => (
           <motion.div
-            whileHover={{scale: 1.05}}
-            transition={{duration: 0.3}}
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.3 }}
             key={index}
             className="rounded-lg overflow-hidden bg-white shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300 dark:shadow-md "
           >
             <div
               className="aspect-[16/10] bg-cover bg-center w-full"
-              style={{backgroundImage: `url(${project.bg_Image})`}}
+              style={{ backgroundImage: `url(${project.bg_Image})` }}
             />
 
             <div className="py-4 px-5 flex items-center justify-between">
@@ -91,11 +91,8 @@ const Work = ({isDarkMode}) => {
           </motion.div>
         ))}
       </motion.div>
-      <motion.a
-        initial={{opacity: 0}}
-        whileInView={{opacity: 1}}
-        transition={{delay: 1.1, duration: 0.5}}
-        href="#work"
+      <Link
+        href="/all-projects"
         className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:hover:bg-darkHover dark:border-white"
       >
         show more{" "}
@@ -104,9 +101,9 @@ const Work = ({isDarkMode}) => {
             isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold
           }
           alt="right arrow"
-          className="4"
+          className="w-4"
         />
-      </motion.a>
+      </Link>
     </motion.div>
   );
 };

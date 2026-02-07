@@ -106,6 +106,27 @@ export const workData = [
     url: "https://findgitpro.netlify.app/",
     github_url: "https://github.com/Hasnain-Ahmad48/GitHub_Profile_Finder",
   },
+  {
+    title: "Project 4",
+    description: "Web Design",
+    bg_Image: "/work-1.png",
+    url: "#",
+    github_url: "#",
+  },
+  {
+    title: "Project 5",
+    description: "Web Design",
+    bg_Image: "/work-2.png",
+    url: "#",
+    github_url: "#",
+  },
+  {
+    title: "Project 6",
+    description: "Web Design",
+    bg_Image: "/work-3.png",
+    url: "#",
+    github_url: "#",
+  },
 ];
 
 export const serviceData = [
