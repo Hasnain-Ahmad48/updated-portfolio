@@ -11,7 +11,8 @@ import Footer from "../components/Footer";
 const AllProjects = () => {
     const [isDarkMode, setIsDarkMode] = useState(() => {
         if (typeof window !== "undefined") {
-            return localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches);
+            const theme = localStorage.getItem("theme");
+            return theme === "dark" || (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches);
         }
         return false;
     });
@@ -30,7 +31,7 @@ const AllProjects = () => {
         <>
             <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
 
-            <div className="w-full px-[12%] py-32 min-h-screen">
+            <div id="home" className="w-full px-[12%] py-32 min-h-screen">
                 <motion.h4
                     initial={{ y: -20, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
@@ -41,6 +42,7 @@ const AllProjects = () => {
                 </motion.h4>
 
                 <motion.h2
+                    id="work"
                     initial={{ y: -20, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.5, duration: 0.5 }}

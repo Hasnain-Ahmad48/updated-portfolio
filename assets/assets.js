@@ -10,7 +10,7 @@ import postman from "./postman.png";
 import figma from "./figma.png";
 import git from "./git.png";
 import github_side_icon from "./side-icon-light.png";
-import github_side_icon_dark from "./side-icon-dark.png"
+import github_side_icon_dark from "./side-icon-dark.png";
 import linkedin from "./linkedin.png";
 import mongodb from "./mongodb.png";
 import github_icon from "./github.png";
@@ -107,25 +107,25 @@ export const workData = [
     github_url: "https://github.com/Hasnain-Ahmad48/GitHub_Profile_Finder",
   },
   {
-    title: "Project 4",
+    title: "Cafe",
     description: "Web Design",
-    bg_Image: "/work-1.png",
-    url: "#",
-    github_url: "#",
+    bg_Image: "/cafe.png",
+    url: "https://modern-coffee.netlify.app/",
+    github_url: "https://github.com/Hasnain-Ahmad48/cafe",
   },
   {
     title: "Project 5",
     description: "Web Design",
-    bg_Image: "/work-2.png",
-    url: "#",
-    github_url: "#",
+    bg_Image: "/chat-app.png",
+    url: "https://github.com/Hasnain-Ahmad48",
+    github_url: "https://github.com/Hasnain-Ahmad48",
   },
   {
     title: "Project 6",
     description: "Web Design",
-    bg_Image: "/work-3.png",
-    url: "#",
-    github_url: "#",
+    bg_Image: "/restuarant.png",
+    url: "https://github.com/Hasnain-Ahmad48",
+    github_url: "https://github.com/Hasnain-Ahmad48",
   },
 ];
 

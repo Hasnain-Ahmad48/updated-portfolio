@@ -91,19 +91,25 @@ const Work = ({ isDarkMode }) => {
           </motion.div>
         ))}
       </motion.div>
-      <Link
-        href="/all-projects"
-        className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:hover:bg-darkHover dark:border-white"
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 1.1, duration: 0.5 }}
       >
-        show more{" "}
-        <Image
-          src={
-            isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold
-          }
-          alt="right arrow"
-          className="w-4"
-        />
-      </Link>
+        <Link
+          href="/all-projects"
+          className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:hover:bg-darkHover dark:border-white"
+        >
+          show more{" "}
+          <Image
+            src={
+              isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold
+            }
+            alt="right arrow"
+            className="w-4"
+          />
+        </Link>
+      </motion.div>
     </motion.div>
   );
 };
