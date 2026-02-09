@@ -114,19 +114,13 @@ export const workData = [
     github_url: "https://github.com/Hasnain-Ahmad48/cafe",
   },
   {
-    title: "Project 5",
+    title: "Paradise Nursery",
     description: "Web Design",
-    bg_Image: "/chat-app.png",
-    url: "https://github.com/Hasnain-Ahmad48",
-    github_url: "https://github.com/Hasnain-Ahmad48",
+    bg_Image: "/paradise-nursery.png",
+    url: "",
+    github_url: "https://github.com/Hasnain-Ahmad48/paradise-nursery",
   },
-  {
-    title: "Project 6",
-    description: "Web Design",
-    bg_Image: "/restuarant.png",
-    url: "https://github.com/Hasnain-Ahmad48",
-    github_url: "https://github.com/Hasnain-Ahmad48",
-  },
+  
 ];
 
 export const serviceData = [
